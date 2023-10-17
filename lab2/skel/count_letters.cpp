@@ -22,10 +22,10 @@ int main() {
         FILE *file;
 
         file = fopen(filename.c_str(),"r");
-        while (fgets(content, sizeof(content), file) != NULL)
-        
-        string temp(content);
-        words.push_back(string(content));
+        while (fgets(content, sizeof(content), file) != NULL) {
+            string temp(content);
+            words.push_back(string(content));
+        }
         fclose(file);
     }
 
